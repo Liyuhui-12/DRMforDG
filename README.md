@@ -4,7 +4,7 @@ This repository is the implementation of [Direct-Effect Risk Minimization for Do
 
 ![Two-stage approach](./fig/stage12.png)
 
-## MainResults
+## Main Results
 
 ![Results](./fig/R1.png)
 
