@@ -5,8 +5,9 @@ This repository is the implementation of [Direct-Effect Risk Minimization for Do
 ![Two-stage approach](./fig/stage12.png)
 
 ## Main Results
-
+<div align=center>
 <img src="./fig/radar_chart.png" alt="Results" style="zoom:33%;" width="50%" height="50%" />
+</div>
 
 Test accuracy of o.o.d. algorithms on 5 correlation-shifted datasets and the DomainBed benchmark (avg). The pink region represents the performance of our method, while the light blue region represents the previously best-known results (implemented by [DomainBed](https://github.com/facebookresearch/DomainBed/) using training-domain validation) on each dataset.
 
