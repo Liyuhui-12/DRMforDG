@@ -6,7 +6,7 @@ This repository is the implementation of [Direct-Effect Risk Minimization for Do
 
 ## Main Results
 
-<div align=center><img src="./fig/radar_chart.png" alt="Results" width="400" height="400"/>
+<img src="./fig/radar_chart.png" alt="Results" style="zoom:33%;" />
 
 Test accuracy of o.o.d. algorithms on 5 correlation-shifted datasets and the DomainBed benchmark (avg). The pink region represents the performance of our method, while the light blue region represents the previously best-known results (implemented by [DomainBed](https://github.com/facebookresearch/DomainBed/) using training-domain validation) on each dataset.
 
@@ -15,6 +15,8 @@ Test accuracy of o.o.d. algorithms on 5 correlation-shifted datasets and the Dom
 ![Results](./fig/R2.png)
 
 Min and Avg are the minimum value and the average of accuracy for all test environments, respectively.
+
+
 
 ## Available datasets
 
@@ -70,3 +72,4 @@ python -m domainbed.scripts.sweep launch\
 ```
 
 DRM can be used in conjunction with different methods and now supports ERM, IRM, and CORAL.
+
