@@ -15,6 +15,8 @@ Min and Avg are the minimum value and the average of accuracy for all test envir
 
 ## How to Run
 
+The code structure of ./stage1(./stage1) and ./stage2 is similar to [DomainBed](https://github.com/facebookresearch/DomainBed/).
+
 ### stage1
 
 ```sh
