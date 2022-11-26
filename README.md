@@ -39,7 +39,7 @@ python listresult --in_dir=/my/sweep/output/path\
                   --out_dir=stage2/weights
 ```
 
-The parameter 'in_dir' should be consistent with 'output_dir' in stage1 parameter '--out_dir' is the path to copy the best model.
+The parameter 'in_dir' should be consistent with 'output_dir' in stage1 and parameter '--out_dir' is the path to copy the best model.
 
 ### stage2
 
