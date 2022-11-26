@@ -5,6 +5,7 @@ This repository is the implementation of [Direct-Effect Risk Minimization for Do
 ![Two-stage approach](./fig/stage12.png)
 
 ## Main Results
+<img src="./fig/radar_chart.png" alt="Results" style="zoom:50%;" />
 
 ![Results](./fig/R1.png)
 
