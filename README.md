@@ -30,8 +30,8 @@ The [currently available datasets](https://github.com/facebookresearch/DomainBed
 - A TerraIncognita ([Beery et al., 2018](https://arxiv.org/abs/1807.04975)) subset
 - DomainNet ([Peng et al., 2019](http://ai.bu.edu/M3SDA/))
 - CelebA ([Liu et al., 2019](https://openaccess.thecvf.com/content_iccv_2015/html/Liu_Deep_Learning_Face_ICCV_2015_paper.html))
-- 3dshapes([Burgess et al., 2018]([Page not found · GitHub](https://github.com/deepmind/3dshapes-dataset/)))
-- DSprites([Matthey et al., 2017]([deepmind/dsprites-dataset: Dataset to assess the disentanglement properties of unsupervised learning methods (github.com)](https://github.com/deepmind/dsprites-dataset/)))
+- 3dshapes([Burgess et al., 2018](https://github.com/deepmind/3d-shapes))
+- DSprites([Matthey et al., 2017](https://github.com/deepmind/dsprites-dataset/))
 
 
 
