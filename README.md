@@ -16,9 +16,26 @@ Test accuracy of o.o.d. algorithms on 5 correlation-shifted datasets and the Dom
 
 Min and Avg are the minimum value and the average of accuracy for all test environments, respectively.
 
+## Available datasets
+
+The [currently available datasets](https://github.com/facebookresearch/DomainBed/blob/main/domainbed/datasets.py) are:
+
+- RotatedMNIST ([Ghifary et al., 2015](https://arxiv.org/abs/1508.07680))
+- ColoredMNIST ([Arjovsky et al., 2019](https://arxiv.org/abs/1907.02893))
+- VLCS ([Fang et al., 2013](https://openaccess.thecvf.com/content_iccv_2013/papers/Fang_Unbiased_Metric_Learning_2013_ICCV_paper.pdf))
+- PACS ([Li et al., 2017](https://arxiv.org/abs/1710.03077))
+- Office-Home ([Venkateswara et al., 2017](https://arxiv.org/abs/1706.07522))
+- A TerraIncognita ([Beery et al., 2018](https://arxiv.org/abs/1807.04975)) subset
+- DomainNet ([Peng et al., 2019](http://ai.bu.edu/M3SDA/))
+- CelebA ([Liu et al., 2019](https://openaccess.thecvf.com/content_iccv_2015/html/Liu_Deep_Learning_Face_ICCV_2015_paper.html))
+- 3dshapes([Burgess et al., 2018]([Page not found · GitHub](https://github.com/deepmind/3dshapes-dataset/)))
+- DSprites([Matthey et al., 2017]([deepmind/dsprites-dataset: Dataset to assess the disentanglement properties of unsupervised learning methods (github.com)](https://github.com/deepmind/dsprites-dataset/)))
+
+
+
 ## Training
 
-The code structure of [ ./stage1](./stage1) and [./stage2 ](./stage2 )is similar to [DomainBed](https://github.com/facebookresearch/DomainBed/). Scripts [./stage1/domainbed/scripts/train.py](./stage1/domainbed/scripts/train.py) and [./stage2/domainbed/scripts/train.py](./stage2/domainbed/scripts/train.py) are used to train a single model. Scripts [./stage1/domainbed/scripts/sweep.py](./stage1/domainbed/scripts/sweep.py) and [./stage2/domainbed/scripts/sweep.py](./stage2/domainbed/scripts/sweep.py) are used to search hyperparameters.  Script [./stage1listresult.py](./stage1listresult.py) is used to select the best model trained in stage 1.
+The code structure of [ ./stage1](./stage1) and [./stage2 ](./stage2 )is similar to [DomainBed](https://github.com/facebookresearch/DomainBed/). Script [./stage1(2)/domainbed/scripts/train.py](./stage1/domainbed/scripts/train.py) trains a single model. Script [./stage1(2)/domainbed/scripts/sweep.py](./stage1/domainbed/scripts/sweep.py) searches hyperparameters.  Script [./stage1listresult.py](./stage1listresult.py) is used to select the best model trained in stage 1.
 
 ### stage1
 
@@ -39,7 +56,7 @@ python listresult --in_dir=/my/sweep/output/path\
                   --out_dir=stage2/weights
 ```
 
-The parameter 'in_dir' should be consistent with 'output_dir' in stage1 and parameter '--out_dir' is the path to copy the best model.
+The parameter 'in_dir' should be consistent with 'output_dir' in stage1 parameter '--out_dir' is the path to copy the best model.
 
 ### stage2
 
