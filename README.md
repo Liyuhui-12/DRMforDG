@@ -37,7 +37,7 @@ The [currently available datasets](https://github.com/facebookresearch/DomainBed
 
 ## Training
 
-The code structure of [ ./stage1](./stage1) and [./stage2 ](./stage2 )is similar to [DomainBed](https://github.com/facebookresearch/DomainBed/). Script [./stage1(2)/domainbed/scripts/train.py](./stage1/domainbed/scripts/train.py) trains a single model. Script [./stage1(2)/domainbed/scripts/sweep.py](./stage1/domainbed/scripts/sweep.py) searches hyperparameters.  Script [./stage1listresult.py](./stage1listresult.py) is used to select the best model trained in stage 1.
+The code structure of [ ./stage1](./stage1) and [./stage2 ](./stage2 )is similar to [DomainBed](https://github.com/facebookresearch/DomainBed/). Script [./stage1(2)/domainbed/scripts/train.py](./stage1/domainbed/scripts/train.py) trains a single model. Script [./stage1(2)/domainbed/scripts/sweep.py](./stage1/domainbed/scripts/sweep.py) searches hyperparameters.  Script [./stage1listresult.py](./stage1listresult.py) is used to select the best model trained in stage1.
 
 ### stage1
 
