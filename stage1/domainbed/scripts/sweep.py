@@ -146,7 +146,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Run a sweep')
     parser.add_argument('--command', default='launch')
     parser.add_argument('--datasets', nargs='+', type=str, default=tmp)
-    parser.add_argument('--algorithms', nargs='+', type=str, default=atmp)
+    parser.add_argument('--algorithms', nargs='+', type=str, default='DCRM')
     parser.add_argument('--task', type=str, default="domain_generalization")
     parser.add_argument('--n_hparams_from', type=int, default=0)
     parser.add_argument('--n_hparams', type=int, default=20)
