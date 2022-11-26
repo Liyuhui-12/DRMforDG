@@ -33,7 +33,11 @@ The [currently available datasets](https://github.com/facebookresearch/DomainBed
 - 3dshapes([Burgess et al., 2018](https://github.com/deepmind/3d-shapes))
 - DSprites([Matthey et al., 2017](https://github.com/deepmind/dsprites-dataset/))
 
+## Preparation
 
+```sh
+conda env create -f drm.yaml
+```
 
 ## Training
 
@@ -71,5 +75,5 @@ python -m domainbed.scripts.sweep launch\
        --datasets=XX
 ```
 
-DRM can be used in conjunction with different methods and now supports ERM, IRM, and CORAL.
+DRM can be used in conjunction with different methods and now supports ERM ([Vapnik, 1998](https://www.wiley.com/en-fr/Statistical+Learning+Theory-p-9780471030034)), IRM ([Arjovsky et al., 2019](https://arxiv.org/abs/1907.02893)), and CORAL ([Sun and Saenko, 2016](https://arxiv.org/abs/1607.01719)).
 
