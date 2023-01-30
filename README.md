@@ -1,6 +1,6 @@
 # DIRECT-EFFECT RISK MINIMIZATION
 
-This repository is the implementation of [Direct-Effect Risk Minimization for Domain Generalization](URL). DRM consists of two stages: learning an indirect-effect representation in *stage 1* and removing the indirect effects in *stage 2*.
+This repository is the implementation of [Direct-Effect Risk Minimization for Domain Generalization](https://arxiv.org/abs/2211.14594). DRM consists of two stages: learning an indirect-effect representation in *stage 1* and removing the indirect effects in *stage 2*.
 
 ![Two-stage approach](./fig/stage12.png)
 
