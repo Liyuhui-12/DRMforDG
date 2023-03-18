@@ -11,7 +11,9 @@ This repository is the implementation of [Direct-Effect Risk Minimization for Do
 
 Test accuracy of o.o.d. algorithms on 5 correlation-shifted datasets and the DomainBed benchmark (avg). The pink region represents the performance of our method, while the light blue region represents the previously best-known results (implemented by [DomainBed](https://github.com/facebookresearch/DomainBed/) using training-domain validation) on each dataset.
 
-![Results](./fig/R1.png#pic_center)
+<div align=center>
+<img src="./fig/R1.png" alt="Results" style="zoom:100%;" width="100%" height="100%" />
+</div>
 
 Min and Avg are the minimum value and the average of accuracy for all test environments, respectively.
 
