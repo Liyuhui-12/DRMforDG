@@ -2,7 +2,7 @@
 
 This repository is the implementation of [Direct-Effect Risk Minimization for Domain Generalization](https://arxiv.org/abs/2211.14594). DRM consists of two stages: learning an indirect-effect representation in *stage 1* and removing the indirect effects in *stage 2*.
 
-![Two-stage approach](./fig/stage12.png)
+![Two-stage approach](./fig/stage12.png#pic_center)
 
 ## Main Results
 <div align=center>
@@ -11,19 +11,21 @@ This repository is the implementation of [Direct-Effect Risk Minimization for Do
 
 Test accuracy of o.o.d. algorithms on 5 correlation-shifted datasets and the DomainBed benchmark (avg). The pink region represents the performance of our method, while the light blue region represents the previously best-known results (implemented by [DomainBed](https://github.com/facebookresearch/DomainBed/) using training-domain validation) on each dataset.
 
-![Results](./fig/R1.png)
+![Results](./fig/R1.png#pic_center)
 
 Min and Avg are the minimum value and the average of accuracy for all test environments, respectively.
 
-![Results](./fig/A1.png)
+![Results](./fig/A1.png#pic_center)
 
 Our approach is based only on an improvement of the sampling phase, so both training set balancing (TB) and validation set balancing (VB) can be easily combined with other algorithms. Both training set balancing and validation set balancing can improve the o.o.d. performance of the original model significantly.
 
-![Results](./fig/F1.png)
+<div align=center>
+<img src="./fig/F1.png" alt="Results" style="zoom:33%;" width="50%" height="50%" />
+</div>
 
 Large-scale models pre-trained with large-scale data can generalize well on diversity-shifted datasets, but show little improvement on correlation-shifted datasets. Experimental results on DomainBed, which show that DRM will not hurt the model performance on the diversity-shifted dataset. [CLIP](https://github.com/openai/CLIP) (ViT-L) and [EVA](https://github.com/baaivision/EVA) (ViT, 1B parameters) in the o.o.d. case even outperforms ResNet-50 in the i.i.d. case on PACS and Office-Home, suggesting that the diversity shift problem can be alleviated by increasing the scale of training data and parameters, as well as improving the model architecture. 
 
-![Results](./fig/R2.png)
+![Results](./fig/R2.png#pic_center)
 
 Experimental results on DomainBed, which show that DRM will not hurt the model performance on the diversity-shifted dataset.
 
