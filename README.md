@@ -27,7 +27,9 @@ Our approach is based only on an improvement of the sampling phase, so both trai
 
 Large-scale models pre-trained with large-scale data can generalize well on diversity-shifted datasets, but show little improvement on correlation-shifted datasets. Experimental results on DomainBed, which show that DRM will not hurt the model performance on the diversity-shifted dataset. [CLIP](https://github.com/openai/CLIP) (ViT-L) and [EVA](https://github.com/baaivision/EVA) (ViT, 1B parameters) in the o.o.d. case even outperforms ResNet-50 in the i.i.d. case on PACS and Office-Home, suggesting that the diversity shift problem can be alleviated by increasing the scale of training data and parameters, as well as improving the model architecture. 
 
-![Results](./fig/R2.png#pic_center)
+<div align=center>
+<img src="./fig/R2.png" alt="Results" style="zoom:100%;" width="100%" height="100%" />
+</div>
 
 Experimental results on DomainBed, which show that DRM will not hurt the model performance on the diversity-shifted dataset.
 
