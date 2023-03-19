@@ -25,7 +25,7 @@ Our approach is based only on an improvement of the sampling phase, so both trai
 <img src="./fig/F1.png" alt="Results" style="zoom:33%;" width="50%" height="50%" />
 </div>
 
-Large-scale models pre-trained with large-scale data can generalize well on diversity-shifted datasets, but show little improvement on correlation-shifted datasets. Experimental results on DomainBed, which show that DRM will not hurt the model performance on the diversity-shifted dataset. [CLIP](https://github.com/openai/CLIP) (ViT-L) and [EVA](https://github.com/baaivision/EVA) (ViT, 1B parameters) in the o.o.d. case even outperforms ResNet-50 in the i.i.d. case on PACS and Office-Home, suggesting that the diversity shift problem can be alleviated by increasing the scale of training data and parameters, as well as improving the model architecture. 
+Large-scale models pre-trained with large-scale data can generalize well on diversity-shifted datasets, but show little improvement on correlation-shifted datasets. Experimental results on DomainBed show that DRM will not hurt the model performance on the diversity-shifted dataset. [CLIP](https://github.com/openai/CLIP) (ViT-L) and [EVA](https://github.com/baaivision/EVA) (ViT, 1B parameters) in the o.o.d. case even outperforms ResNet-50 in the i.i.d. case on PACS and Office-Home, suggesting that the diversity shift problem can be alleviated by increasing the scale of training data and parameters, as well as improving the model architecture. 
 
 <div align=center>
 <img src="./fig/R2.png" alt="Results" style="zoom:100%;" width="100%" height="100%" />
@@ -90,5 +90,5 @@ python -m domainbed.scripts.sweep launch\
        --datasets=XX
 ```
 
-DRM can be used in conjunction with different methods and now supports ERM ([Vapnik, 1998](https://www.wiley.com/en-fr/Statistical+Learning+Theory-p-9780471030034)), IRM ([Arjovsky et al., 2019](https://arxiv.org/abs/1907.02893)), and CORAL ([Sun and Saenko, 2016](https://arxiv.org/abs/1607.01719)).
+DRM can be used in conjunction with different methods and now supports ERM ([Vapnik, 1998](https://www.wiley.com/en-fr/Statistical+Learning+Theory-p-9780471030034)), IRM ([Arjovsky et al., 2019](https://arxiv.org/abs/1907.02893)), VREx ([Krueger et al., 2021](http://proceedings.mlr.press/v139/krueger21a.html)), CORAL ([Sun and Saenko, 2016](https://arxiv.org/abs/1607.01719)), and CDANN ([Li et al., 2018d](https://openaccess.thecvf.com/content_ECCV_2018/html/Ya_Li_Deep_Domain_Generalization_ECCV_2018_paper.html))
 
